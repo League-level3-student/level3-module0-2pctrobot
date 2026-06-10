@@ -47,14 +47,20 @@ public class _01_IntroToArrays {
     			smolBean=beanCounters[i];
     		}
         }
+    	for(int i = 0; i < beanCounters.length; i++){
+    		if(beanCounters[i]>bigBean) {
+    			bigBean=beanCounters[i];
+    		}
+        }
     	System.out.println("Smallest Bean Found! "+smolBean);
         // 10 print the entire array to see if step 8 was correct
     	for(int i = 0; i < beanCounters.length; i++){
             System.out.println("Counting Bean: "+(beanCounters[i]+1));
         }
         // 11. print the largest number in the array.
-
+    	System.out.println("Biggest Bean Found! "+bigBean);
         // 12. print only the last element in the array
-
+    	System.out.println("Final Bean Found! "+beanCounters[49]);
+    	System.out.println("Bean Counters Restablized");
     }
 }
